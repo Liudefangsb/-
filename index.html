@@ -21,8 +21,8 @@
     <div style="padding:5%;margin-top: 200px;background-color: rgba(125, 181, 216, 0.3);">
         <div id="GameScoreLayer-text"></div>
         <div id="GameScoreLayer-CPS" style="margin:5px 0;"></div>
-        <div id="GameScoreLayer-score" style="margin:5px 0;">得分</div>
-        <div id="GameScoreLayer-bast" style="margin:5px 0">最佳</div>
+        <div id="GameScoreLayer-score" style="margin:5px 0;">昨壁次数</div>
+        <div id="GameScoreLayer-bast" style="margin:5px 0">最高昨壁了</div>
         <button type="button" class="btn btn-secondary btn-lg" id="replay" onclick="replayBtn()">再上一节语文课</button>
         <button type="button" class="btn btn-secondary btn-lg" onclick="window.location.reload()">主页</button>
         <button type="button" class="btn btn-secondary btn-lg" onclick="window.location.href='https://github.com/arcxingye/EatKano'">开源</button>
@@ -57,9 +57,9 @@
             </div>
             <div id="setting" style="display: none;">
                 <div class="container mb-3">
-                    <input type="button" class="btn btn-secondary btn-lg" onclick="getClickBeforeImage()" value="设置点击前的图" style="left: 0">
+                    <input type="button" class="btn btn-secondary btn-lg" onclick="getClickBeforeImage()" value="设置点击前的草图" style="left: 0">
                     <input type="file" id="click-before-image" accept="image/*" style="display: none;" onchange="saveClickBeforeImage()">
-                    <input type="button" class="btn btn-secondary btn-lg" onclick="getClickAfterImage()" value="设置点击后的图" style="right: 0">
+                    <input type="button" class="btn btn-secondary btn-lg" onclick="getClickAfterImage()" value="设置点击后的草图" style="right: 0">
                     <input type="file" id="click-after-image" accept="image/*" style="display: none;" onchange="saveClickAfterImage()">
                 </div>
                 <div class="input-group mb-3">
