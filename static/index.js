@@ -410,8 +410,8 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
 
         $('#GameScoreLayer-CPS').html('CPS&nbsp;' + cps.toFixed(2)); //获取CPS
         $('#GameScoreLayer-score').css('display', mode === MODE_ENDLESS ? 'none' : '')
-            .html('昨壁次数&nbsp;' + (normalCond ? score : "<span style='color:red;'>" + score + "</span>"));
-        $('#GameScoreLayer-bast').html('最高昨壁了&nbsp;' + scoreToString(best));
+            .html('这节课昨壁次数&nbsp;' + (normalCond ? score : "<span style='color:red;'>" + score + "</span>"));
+        $('#GameScoreLayer-bast').html('最高左边此书&nbsp;' + scoreToString(best));
 
         l.css('display', 'block');
     }
